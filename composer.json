@@ -1,7 +1,7 @@
 {
     "name": "amamarul/integer-hashids",
     "type": "package",
-    "description": "Laravel Integers Hashids Generator. Encode and decode ids to Integers",
+    "description": "Laravel Integers Hashids Generator. Encode and decode ids to Integers. Also generate prefixed hashids",
     "keywords": ["laravel","laravel 5.4","Laravel Integers Hashids", "Laravel 5.4 hashids", "Integers Hashids", "Prefixed hashids", "Prefixed integer hashids"],
     "license": "MIT",
     "authors": [
@@ -13,6 +13,15 @@
     "autoload":{
       "psr-4": {
         "Amamarul\\Hashids\\": "src/"
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Amamarul\\Hashids\\HashidsServiceProvider"
+        ],
+        "aliases": {
+        }
       }
     },
     "minimum-stability": "stable",
